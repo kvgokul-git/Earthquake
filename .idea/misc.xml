@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
+        <entry key="app/src/main/res/layout/earth_quakes_fragment.xml" value="0.13677811550151975" />
+        <entry key="app/src/main/res/layout/earthquake_item.xml" value="0.14361702127659576" />
+        <entry key="app/src/main/res/layout/fragment_earth_quake_details.xml" value="0.19927536231884058" />
+        <entry key="app/src/main/res/layout/fragment_earth_quakes_details.xml" value="0.19067028985507245" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/earthQuakesFragment">
+
+    <fragment
+        android:id="@+id/earthQuakesFragment"
+        android:name="com.gklabs.earthquake.ui.earthquake.EarthQuakesFragment"
+        android:label="earth_quakes_fragment"
+        tools:layout="@layout/earth_quakes_fragment">
+        <action
+            android:id="@+id/action_earthQuakesFragment_to_earthQuakeDetailsFragment"
+            app:destination="@id/earthQuakeDetailsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="lat"
+                app:argType="string" />
+            <argument
+                android:name="lng"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/earthQuakeDetailsFragment"
+        android:name="com.gklabs.earthquake.ui.earthquakedetails.EarthQuakesDetailsFragment"
+        android:label="fragment_earth_quake_details"
+        tools:layout="@layout/fragment_earth_quakes_details">
+        <argument
+            android:name="lat"
+            app:argType="string" />
+        <argument
+            android:name="lng"
+            app:argType="string" />
+    </fragment>
+</navigation>
